@@ -4,6 +4,7 @@ pipeline{
         stage("build"){
             steps{
                 echo "Build"
+                git 'git@github.com:LiGuangRu1024/test_git.git'
             }
         }
         stage("Test"){
@@ -16,5 +17,13 @@ pipeline{
                 echo "Deployment"
             }
         }
+    }
+     post{
+        always{
+            echo 'always say stop'
+        }
+    }
+    parameters{
+        string( name :'LiGuangRu1024',defaultValue:'test_git',description:'构建者')
     }
 }
