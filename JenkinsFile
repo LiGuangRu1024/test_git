@@ -21,6 +21,7 @@ pipeline{
      post{
         always{
             echo 'always say stop'
+            sh 'python3 qy_rebot.py'
         }
     }
     parameters{
