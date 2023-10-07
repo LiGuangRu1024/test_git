@@ -36,7 +36,8 @@ class TestDW:
         # WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable(locator))
         #
         # self.driver.find_element(by=By.XPATH, value="locator").click()
-        self.driver.find_element(by=By.XPATH, value="//android.widget.ListView[@resource-id='com.xueqiu.android:id/lv_list_view']/android.widget.RelativeLayout[1]").click()
+        self.driver.find_element(by=By.XPATH,
+                                 value="//android.widget.ListView[@resource-id='com.xueqiu.android:id/lv_list_view']/android.widget.RelativeLayout[1]").click()
 
     def test_attr(self):
 
