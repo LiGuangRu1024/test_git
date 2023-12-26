@@ -1,0 +1,5 @@
+-
+  url: https://test-medical.wenetwork.cn:442/medical-api/login
+  method: post
+  header:
+    Content-Type: application/json;charset=UTF-8
