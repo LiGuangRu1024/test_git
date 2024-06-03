@@ -1,0 +1,18 @@
+在学生选课系统的后台数据库中，主要有三个表:
+    学生基本信息表 stdinfo(学号 SN、姓名 Name、性别 Sex、专业 Speciality、出生年月 Bday)
+    选课表 Mycourse(学号 SN、选课号 CourseNum、分数Credithour)
+    课程表 Coursetab(课程号 CourseNum、课程名 Coursename、所属专业 Speciality、学分credit)
+要求:写出SQL语句。
+
+A)查询所有选 SQL 课程的学生学号、姓名和专业
+
+B) 删除所有选择数学的同学的选课记录
+
+C) 查询有哪些课程有30个以上的同学报选
+
+D) 查询有哪些课程没有被任何同学报选
+
+E) stdinfo表中有多少名男生和女生?
+SELECT Sex,COUNT(*) FROM USER GROUP BY Sex
+
+F)每个人的总成绩是多少?

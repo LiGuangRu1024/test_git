@@ -55,11 +55,11 @@ if __name__ == '__main__':
     # unittest.main()
 
     # suite = unittest.TestSuite()
-    # suite.addTest(demo("test_case01"))
+    # suite.addTest(demo3("test_case01"))
     # suite.addTest(demo1("test_demo1_case0"))
     # unittest.TextTestRunner().run(suite)
 
-    # suite = unittest.TestLoader().loadTestsFromTestCase(demo)
+    # suite = unittest.TestLoader().loadTestsFromTestCase(demo3)
     # suite1 = unittest.TestLoader().loadTestsFromTestCase(demo1)
     # suiteall = unittest.TestSuite([suite, suite1])
     # unittest.TextTestRunner().run(suiteall)
